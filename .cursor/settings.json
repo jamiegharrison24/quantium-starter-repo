@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "runlayer": {
+      "enabled": true
+    },
+    "cloudflare": {
+      "enabled": true
+    },
+    "convex": {
+      "enabled": true
+    },
+    "context7-plugin": {
+      "enabled": true
+    }
+  }
+}
