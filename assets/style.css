@@ -1,0 +1,96 @@
+/* Pink Morsel sales visualiser – theme and layout */
+
+:root {
+  --pm-bg: #fef8f9;
+  --pm-surface: #ffffff;
+  --pm-accent: #c94b6a;
+  --pm-accent-soft: #e8a4b4;
+  --pm-text: #2d1f24;
+  --pm-text-muted: #6b5a61;
+  --pm-border: #ecd5da;
+  --pm-shadow: rgba(201, 75, 106, 0.08);
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--pm-bg);
+  color: var(--pm-text);
+  font-family: var(--font-sans);
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--pm-text);
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.region-filter-wrapper {
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px var(--pm-shadow);
+}
+
+.region-filter-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--pm-text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.region-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.region-filter label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--pm-text);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.region-filter label:hover {
+  background: var(--pm-bg);
+}
+
+.region-filter label:has(input:checked) {
+  font-weight: 600;
+  color: var(--pm-accent);
+  background: linear-gradient(to right, var(--pm-accent-soft), transparent);
+}
+
+.region-filter input {
+  accent-color: var(--pm-accent);
+}
+
+.chart-wrapper {
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-border);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px var(--pm-shadow);
+}
+
+.chart-wrapper .js-plotly-plot {
+  border-radius: 6px;
+}
