@@ -1,3 +1,5 @@
-dash
+dash[testing]
 pandas
 plotly
+pytest
+chromedriver-autoinstaller
