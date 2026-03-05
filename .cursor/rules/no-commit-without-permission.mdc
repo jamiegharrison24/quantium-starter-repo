@@ -1,0 +1,11 @@
+---
+description: Do not commit or push to git without explicit user permission
+alwaysApply: true
+---
+
+# Git: No Commit or Push Without Permission
+
+- **Do not run `git commit`** unless the user has explicitly asked you to commit (e.g. "commit this", "commit and push", "commit the changes").
+- **Do not run `git push`** unless the user has explicitly asked you to push (e.g. "push to GitHub", "push my changes").
+- If you make changes that could be committed, you may suggest committing or pushing and give the exact commands, but do not execute them without explicit permission.
+- Staging files with `git add` is acceptable when preparing for a commit the user has requested; do not push after committing unless the user asked for it.
